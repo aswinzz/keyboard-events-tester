@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎹 Keyboard Event Tester
 
-## Getting Started
+A free, open-source web application for testing JavaScript keyboard events in real-time. Perfect for developers debugging keyboard interactions, building keyboard shortcuts, and understanding browser event handling.
 
-First, run the development server:
+🔗 **Live Demo**: [key-events.aswinvb.com](https://key-events.aswinvb.com)
 
+## ✨ Features
+
+### Core Functionality
+- **Real-time Event Display** - See keyboard event properties instantly as you type
+- **Complete Event Data** - Shows `event.key`, `event.code`, `event.keyCode`, `event.which`
+- **Modifier Key Detection** - Track Alt, Ctrl, Shift, and Meta key states
+- **Key Combination Display** - Visual representation of complex key combinations
+- **Raw JSON Output** - Complete event object for debugging
+
+### Developer Tools
+- **Console Logging** - All events logged to browser console for programmatic access
+- **Event History** - Track the last 10 key presses with timestamps
+- **Deprecation Warnings** - Clear indicators for deprecated properties
+- **Cross-platform Support** - Works on Windows, Mac, and Linux
+
+### User Experience
+- **Clean, Modern UI** - Intuitive interface built with Tailwind CSS
+- **Responsive Design** - Works on desktop, tablet, and mobile devices
+- **Accessibility Focused** - Proper semantic HTML and ARIA labels
+- **No Installation Required** - Runs entirely in the browser
+
+## 🚀 Quick Start
+
+### Online Usage
+Simply visit [key-events.aswinvb.com](https://key-events.aswinvb.com) and start pressing keys!
+
+### Local Development
 ```bash
+# Clone the repository
+git clone https://github.com/aswinzz/keyboard-events-tester.git
+cd keyboard-events-tester
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 15 with React 19
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Deployment**: Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📖 Use Cases
 
-## Learn More
+### For Web Developers
+- **Keyboard Shortcut Development** - Test key combinations for web applications
+- **Event Debugging** - Understand how different keys trigger events
+- **Cross-browser Testing** - Verify keyboard behavior across browsers
+- **Accessibility Testing** - Ensure keyboard navigation works properly
 
-To learn more about Next.js, take a look at the following resources:
+### For Students & Educators
+- **Learning JavaScript Events** - Visual way to understand keyboard events
+- **Browser API Education** - See how modern vs deprecated APIs work
+- **Interactive Demonstrations** - Show event handling in real-time
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### For QA Testers
+- **Input Validation** - Test how applications handle various key inputs
+- **Edge Case Discovery** - Find unusual key combinations and behaviors
+- **Documentation** - Record exact key codes for bug reports
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Key Event Properties Explained
 
-## Deploy on Vercel
+| Property | Description | Status | Example |
+|----------|-------------|--------|---------|
+| `event.key` | The key value (what you see) | ✅ Modern | `"a"`, `"Enter"`, `"ArrowUp"` |
+| `event.code` | Physical key location | ✅ Modern | `"KeyA"`, `"Enter"`, `"ArrowUp"` |
+| `event.keyCode` | Numeric key code | ⚠️ Deprecated | `65`, `13`, `38` |
+| `event.which` | Legacy key code | ⚠️ Deprecated | `65`, `13`, `38` |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Modifier Keys
+- **Alt Key** - `event.altKey` (boolean)
+- **Ctrl Key** - `event.ctrlKey` (boolean)  
+- **Shift Key** - `event.shiftKey` (boolean)
+- **Meta Key** - `event.metaKey` (boolean) - Cmd on Mac, Windows key on PC
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔍 SEO & Discoverability
+
+This tool is optimized for search engines with:
+- **Semantic HTML** structure
+- **Rich meta tags** and Open Graph data
+- **Structured data** (JSON-LD)
+- **Sitemap** and robots.txt
+- **Performance optimized** for Core Web Vitals
+
+### Target Keywords
+- Keyboard event tester
+- JavaScript keycode finder
+- Event.key tester
+- Event.code finder
+- Keyboard event inspector
+- Web developer tools
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+### Development Guidelines
+1. Follow TypeScript best practices
+2. Maintain responsive design
+3. Add appropriate tests
+4. Update documentation
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Aswin VB**
+- Website: [aswinvb.com](https://aswinvb.com)
+- GitHub: [@aswinzz](https://github.com/aswinvb)
+- Twitter: [@aswinvb1](https://twitter.com/aswinvb1)
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Icons by [Lucide](https://lucide.dev/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+**⭐ If this tool helped you, please consider giving it a star on GitHub!**
